@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencilbasics.esm.js"></script>
+  <script nomodule src="/build/stencilbasics.js"></script>
+
+</head>
+<body>
+  
+  <button>Open Modal</button>
+  <!-- <my-backdrop></my-backdrop> -->
+  <my-modal title='Info' content='This is an important information'></my-modal>
+
+  <script>
+    let button = document.querySelector('button')
+    let modal = document.querySelector('my-modal')
+    button.addEventListener('click', function() {
+      modal.open();
+    });
+    
+  </script>
+</body>
+</html>
